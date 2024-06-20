@@ -1,4 +1,5 @@
-
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const heading = React.createElement(
     "h1",
@@ -41,7 +42,7 @@ const parent = React.createElement(
 
 const old = document.getElementById("old");
 
-root.render(parent)// replaces the prev content// works only inside the root
+root.render(heading)// replaces the prev content// works only inside the root
 
 //This become so ugly
 //JSX
