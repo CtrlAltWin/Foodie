@@ -1,3 +1,3 @@
-#headi{
-    color:red
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
