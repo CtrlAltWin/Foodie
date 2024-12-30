@@ -20,24 +20,15 @@ const Header = () => {
       </div>
       <div className="flex">
         <ul className="flex p-10 items-center font-sans font-thin text-xl">
-          <li className="px-4">Home</li>
-          <li className="px-4">Cart</li>
-          <li className="px-4">
-            <Link to="/about">About us</Link>
+          <li className="px-4 py-2 hover:bg-gray-300">Home</li>
+          <li className="px-4 py-2 hover:bg-gray-300">
+            About us
           </li>
-          <li className="px-4">
-            <button
-              className="login"
-              onClick={() => {
-                if (loginBtn == "Login") setloginBtn("Logout");
-                else setloginBtn("Login");
-              }}
-            >
-              {loginBtn}
-            </button>
+          <li className="px-4 py-2 hover:bg-gray-300 ">
+           SignUp
           </li>
-          <li className="font-bold">Cart-({cart.length} items) </li>
-          <li className="font-bold px-4">{loggedInUser}</li>
+          <li className=" cursor-pointer px-4 py-2 hover:bg-gray-300" ><Link to={"/cart"}>Cart🛒 {cart.length?cart.length:""}</Link> </li>
+          <li className="font-bold px-4 py-2">{loggedInUser}</li>
         </ul>
       </div>
     </div>

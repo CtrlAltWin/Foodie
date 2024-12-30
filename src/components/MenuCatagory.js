@@ -16,7 +16,6 @@ const MenuCatagory = (props) => {
         <div className="font-sans font-bold text-md ">
           {data.card.card.title} ({data.card.card.itemCards.length})
         </div>
-        <div className="font-bold text-lg">{Show === true ? "↑" : "↓"}</div>
       </div>
       <MenuItems items={data.card.card.itemCards} CanShow={Show} />
     </div>
